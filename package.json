@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,9 @@
     "graphql-playground-middleware-express": "^1.7.18",
     "mongodb": "^3.6.0",
     "mongodb-memory-server": "^6.6.3"
+  },
+  "devDependencies": {
+    "jest": "^26.3.0",
+    "supertest": "^4.0.2"
   }
 }
