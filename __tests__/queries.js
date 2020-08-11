@@ -21,6 +21,7 @@ test("fetch users", async (done) => {
     .expect(200)
     .end(function (err, res) {
       if (err) return done(err);
+      expect(response.status).toBe(200);
       expect(res.body).toBeInstanceOf(Object);
       expect(res.body.data.users.length).toEqual(3);
       done();
